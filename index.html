@@ -7,7 +7,6 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Inter, sans-serif;
       background-color: #E6E6FA;
       color: #000;
@@ -24,6 +23,22 @@
       width: 90%;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4B0082;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     header {
@@ -44,21 +59,42 @@
     section {
       margin-top: 20px;
     }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4B0082;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #360062;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="https://github.com/saganamery" target="_blank">GitHub</a>
+    </nav>
     <header>
       <h1>Welcome to My Portfolio! 🤘</h1>
       <p>Showcasing my work in machine learning, front-end, and back-end development.</p>
     </header>
-    <section>
+    <section id="about">
       <h2>About Me</h2>
       <p>I’m an engineer who builds practical solutions using Python, statistics, and modern web technologies.</p>
     </section>
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
       <p>Projects like interactive demos and project writeups will be here eventually. 👽</p>
+      <a class="button" href="https://github.com/saganamery" target="_blank">View GitHub Profile</a>
     </section>
   </div>
 </body>
